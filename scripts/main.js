@@ -1,6 +1,5 @@
   var canvas = document.getElementById('canvas');
   var context = canvas.getContext('2d');
-  var radius = 100;
   var circle = {centerX:250, centerY:250, radius:200,  angle:0}
   var raf;
 
