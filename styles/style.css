@@ -1,0 +1,49 @@
+body {
+  background-color: blue;
+}
+
+#canvas {
+  position: absolute;
+  left: 33%;
+  top: 2%;
+  width: 125px;
+  width: 125px;
+  margin: 0;
+  z-index: 2;
+}
+
+#triangle {
+width: 0;
+height: 0;
+border-style: solid;
+border-color: transparent transparent #007bff transparent;
+border-width: 0 80px 125px 80px;
+z-index: 1;
+position: absolute;
+left: 28%;
+top: 1%;
+margin: 0;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 321px) {
+  #canvas {
+    width: 250px;
+    height: 250px;
+    top: 3%;
+  }
+  #triangle {
+    border-width: 0 160px 250px 160px;
+  }
+}
+
+@media only screen and (max-width: 1900px) and (min-width: 769px) {
+  #canvas {
+    width: 500px;
+    height: 500px;
+    top: 6%;
+  }
+
+  #triangle {
+    border-width: 0 320px 500px 320px;
+  }
+}
